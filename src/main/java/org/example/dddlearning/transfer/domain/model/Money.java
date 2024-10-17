@@ -1,4 +1,4 @@
-package org.example.dddlearning.domain.model;
+package org.example.dddlearning.transfer.domain.model;
 
 import java.math.BigDecimal;
 

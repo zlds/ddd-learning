@@ -1,9 +1,10 @@
-package org.example.dddlearning.domain.service;
+package org.example.dddlearning.transfer.domain.service;
 
-import org.example.dddlearning.domain.event.TransferCompletedEvent;
-import org.example.dddlearning.domain.model.Account;
-import org.example.dddlearning.domain.model.Money;
-import org.example.dddlearning.domain.repository.AccountRepository;
+
+import org.example.dddlearning.transfer.domain.event.TransferCompletedEvent;
+import org.example.dddlearning.transfer.domain.model.Account;
+import org.example.dddlearning.transfer.domain.model.Money;
+import org.example.dddlearning.transfer.domain.repository.AccountRepository;
 import org.example.dddlearning.transfer.infrastructure.messaging.TransferEventPublisher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

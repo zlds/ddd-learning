@@ -1,8 +1,9 @@
-package org.example.dddlearning.application;
+package org.example.dddlearning.transfer.application;
 
-import org.example.dddlearning.domain.model.Account;
-import org.example.dddlearning.domain.model.Money;
-import org.example.dddlearning.domain.service.TransferService;
+
+import org.example.dddlearning.transfer.domain.model.Account;
+import org.example.dddlearning.transfer.domain.model.Money;
+import org.example.dddlearning.transfer.domain.service.TransferService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

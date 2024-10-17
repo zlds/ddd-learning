@@ -1,6 +1,7 @@
-package org.example.dddlearning.domain.repository;
+package org.example.dddlearning.transfer.domain.repository;
 
-import org.example.dddlearning.domain.model.TransferAuditRecord;
+
+import org.example.dddlearning.transfer.domain.model.TransferAuditRecord;
 
 /**
  * @author: hanchaowei

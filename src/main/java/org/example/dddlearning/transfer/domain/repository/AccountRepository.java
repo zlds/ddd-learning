@@ -1,6 +1,7 @@
-package org.example.dddlearning.domain.repository;
+package org.example.dddlearning.transfer.domain.repository;
 
-import org.example.dddlearning.domain.model.Account;
+
+import org.example.dddlearning.transfer.domain.model.Account;
 
 import java.util.Optional;
 

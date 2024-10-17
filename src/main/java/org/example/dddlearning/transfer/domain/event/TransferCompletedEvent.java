@@ -1,4 +1,4 @@
-package org.example.dddlearning.domain.event;
+package org.example.dddlearning.transfer.domain.event;
 
 import java.math.BigDecimal;
 

@@ -1,8 +1,9 @@
 package org.example.dddlearning.transfer.infrastructure.repository;
 
-import org.example.dddlearning.domain.model.Account;
-import org.example.dddlearning.domain.model.Money;
-import org.example.dddlearning.domain.repository.AccountRepository;
+
+import org.example.dddlearning.transfer.domain.model.Account;
+import org.example.dddlearning.transfer.domain.model.Money;
+import org.example.dddlearning.transfer.domain.repository.AccountRepository;
 import org.example.dddlearning.transfer.infrastructure.repository.entity.AccountEntity;
 import org.example.dddlearning.transfer.infrastructure.repository.mapper.AccountMapper;
 import org.springframework.beans.factory.annotation.Autowired;

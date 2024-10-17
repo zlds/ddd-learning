@@ -1,8 +1,9 @@
 package org.example.dddlearning.transfer.interfaces;
 
 
-import org.example.dddlearning.application.TransferApplicationService;
-import org.example.dddlearning.domain.model.Account;
+
+import org.example.dddlearning.transfer.application.TransferApplicationService;
+import org.example.dddlearning.transfer.domain.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
