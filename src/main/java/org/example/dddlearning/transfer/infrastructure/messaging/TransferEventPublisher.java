@@ -1,4 +1,4 @@
-package org.example.dddlearning.infrastructure.messaging;
+package org.example.dddlearning.transfer.infrastructure.messaging;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.dddlearning.domain.event.TransferCompletedEvent;

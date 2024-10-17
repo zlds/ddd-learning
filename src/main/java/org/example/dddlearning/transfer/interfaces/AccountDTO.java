@@ -1,4 +1,4 @@
-package org.example.dddlearning.interfaces;
+package org.example.dddlearning.transfer.interfaces;
 
 import lombok.Data;
 

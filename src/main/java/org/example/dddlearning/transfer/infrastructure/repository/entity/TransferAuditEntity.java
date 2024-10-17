@@ -1,4 +1,4 @@
-package org.example.dddlearning.infrastructure.repository.entity;
+package org.example.dddlearning.transfer.infrastructure.repository.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

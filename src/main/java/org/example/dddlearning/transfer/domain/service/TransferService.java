@@ -4,7 +4,7 @@ import org.example.dddlearning.domain.event.TransferCompletedEvent;
 import org.example.dddlearning.domain.model.Account;
 import org.example.dddlearning.domain.model.Money;
 import org.example.dddlearning.domain.repository.AccountRepository;
-import org.example.dddlearning.infrastructure.messaging.TransferEventPublisher;
+import org.example.dddlearning.transfer.infrastructure.messaging.TransferEventPublisher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

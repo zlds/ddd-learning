@@ -1,7 +1,7 @@
-package org.example.dddlearning.infrastructure.repository.mapper;
+package org.example.dddlearning.transfer.infrastructure.repository.mapper;
 
 import org.apache.ibatis.annotations.*;
-import org.example.dddlearning.infrastructure.repository.entity.AccountEntity;
+import org.example.dddlearning.transfer.infrastructure.repository.entity.AccountEntity;
 
 /**
  * @author: hanchaowei

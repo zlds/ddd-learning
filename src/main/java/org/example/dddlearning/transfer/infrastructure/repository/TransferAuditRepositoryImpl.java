@@ -1,9 +1,9 @@
-package org.example.dddlearning.infrastructure.repository;
+package org.example.dddlearning.transfer.infrastructure.repository;
 
 import org.example.dddlearning.domain.model.TransferAuditRecord;
 import org.example.dddlearning.domain.repository.TransferAuditRepository;
-import org.example.dddlearning.infrastructure.repository.entity.TransferAuditEntity;
-import org.example.dddlearning.infrastructure.repository.mapper.TransferAuditMapper;
+import org.example.dddlearning.transfer.infrastructure.repository.entity.TransferAuditEntity;
+import org.example.dddlearning.transfer.infrastructure.repository.mapper.TransferAuditMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
