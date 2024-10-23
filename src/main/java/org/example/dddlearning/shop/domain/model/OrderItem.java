@@ -44,6 +44,10 @@ public class OrderItem {
 		return price;
 	}
 
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
 	public String getProductName() {
 		return productName;
 	}

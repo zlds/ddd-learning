@@ -13,6 +13,9 @@ public class OrderItemRequest {
 	// 商品ID
 	private Long productId;
 
+	// 商品名称
+	private String productName;
+
 	// 商品数量
 	private Integer quantity;
 
@@ -25,6 +28,14 @@ public class OrderItemRequest {
 
 	public void setProductId(Long productId) {
 		this.productId = productId;
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 	public Integer getQuantity() {

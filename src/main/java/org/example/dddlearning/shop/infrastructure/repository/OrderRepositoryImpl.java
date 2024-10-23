@@ -70,6 +70,7 @@ public class OrderRepositoryImpl implements OrderRepository {
 	private OrderEntity toEntity(Order order) {
 		OrderEntity entity = new OrderEntity();
 		entity.setCustomerId(order.getCustomerId());
+		entity.setCustomerName(order.getCustomerName());
 		entity.setStatus(order.getStatus().name());
 		return entity;
 	}
@@ -78,6 +79,7 @@ public class OrderRepositoryImpl implements OrderRepository {
 		OrderItemEntity entity = new OrderItemEntity();
 		entity.setOrderId(orderId);
 		entity.setProductId(orderItem.getProductId());
+		entity.setProductName(orderItem.getProductName());
 		entity.setPrice(orderItem.getPrice());
 		entity.setQuantity(orderItem.getQuantity());
 		return entity;

@@ -20,6 +20,7 @@ public class OrderConverter {
 	public static CreateOrderDTO toCreateOrderRequest(OrderRequest orderRequest) {
 		CreateOrderDTO request = new CreateOrderDTO();
 		request.setCustomerId(orderRequest.getCustomerId());
+		request.setCustomerName(orderRequest.getCustomerName());
 		request.setItems(toCreateOrderItemRequest(orderRequest.getItems()));
 		return request;
 	}
@@ -32,6 +33,7 @@ public class OrderConverter {
 			r.setPrice(item.getPrice());
 			r.setProductId(item.getProductId());
 			r.setQuantity(item.getQuantity());
+			r.setProductName(item.getProductName());
 			request.add(r);
 		}
 		return request;

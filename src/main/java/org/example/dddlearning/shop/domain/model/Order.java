@@ -25,16 +25,22 @@ public class Order {
 	// 订单状态
 	private OrderStatus status;
 	// 订单总金额
-	private BigDecimal totalAmount;
+	private Money totalAmount;
 	// 创建时间
 	private Date createTime;
 
 	public Order(String customerId,String customerName) {
+		if (customerId == null || customerId.isEmpty()) {
+			throw new IllegalArgumentException("客户id不能为空");
+		}
+		if (customerName == null || customerName.isEmpty()) {
+			throw new IllegalArgumentException("客户姓名不能为空");
+		}
 		this.customerId = customerId;
 		this.customerName = customerName;
 		this.items = new ArrayList<>();
 		this.status = OrderStatus.CREATED;
-		this.totalAmount = BigDecimal.ZERO;
+		this.totalAmount = new Money(BigDecimal.ZERO);
 		this.createTime = new Date();
 
 	}
@@ -75,11 +81,11 @@ public class Order {
 		this.status = status;
 	}
 
-	public BigDecimal getTotalAmount() {
+	public Money getTotalAmount() {
 		return totalAmount;
 	}
 
-	public void setTotalAmount(BigDecimal totalAmount) {
+	public void setTotalAmount(Money totalAmount) {
 		this.totalAmount = totalAmount;
 	}
 
@@ -97,6 +103,7 @@ public class Order {
 			throw new IllegalArgumentException("订单明细不能为空");
 		}
 		items.add(item);
+		calculateTotalAmount();
 	}
 
 	// 删除订单明细
@@ -121,6 +128,16 @@ public class Order {
 			throw new IllegalStateException("已发货的订单无法取消");
 		}
 		this.status = OrderStatus.CANCELLED;
+	}
+
+
+	// 计算订单总金额
+	private void calculateTotalAmount() {
+		BigDecimal totalAmount = BigDecimal.ZERO;
+		for (OrderItem item : items) {
+			totalAmount = totalAmount.add(item.getPrice().multiply(new BigDecimal(item.getQuantity())));
+		}
+		this.totalAmount = new Money(totalAmount);
 	}
 
 }

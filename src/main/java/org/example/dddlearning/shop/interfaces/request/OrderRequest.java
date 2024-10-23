@@ -12,6 +12,8 @@ public class OrderRequest {
 
 	// 客户ID
 	private String customerId;
+	// 客户姓名
+	private String customerName;
 
 	private List<OrderItemRequest> items;
 
@@ -21,6 +23,14 @@ public class OrderRequest {
 
 	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
+	}
+
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
 	}
 
 	public List<OrderItemRequest> getItems() {
