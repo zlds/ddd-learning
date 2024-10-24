@@ -1,4 +1,4 @@
-package org.example.dddlearning.shop.domain.model;
+package org.example.dddlearning.shop.domain.model.order;
 
 import java.math.BigDecimal;
 
@@ -20,6 +20,9 @@ public class OrderItem {
 	private String productName;
 
 	public OrderItem(Long productId, String productName,int quantity, BigDecimal price) {
+		if (productId == null) {
+			throw new IllegalArgumentException("商品ID不能为空");
+		}
 		if (quantity <= 0) {
 			throw  new IllegalArgumentException("商品数量必须大于0");
 		}

@@ -1,7 +1,9 @@
 package org.example.dddlearning.shop.infrastructure.repository;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import org.example.dddlearning.shop.domain.model.*;
+import org.example.dddlearning.shop.domain.model.order.Order;
+import org.example.dddlearning.shop.domain.model.order.OrderItem;
+import org.example.dddlearning.shop.domain.model.order.OrderStatus;
 import org.example.dddlearning.shop.domain.repository.OrderRepository;
 import org.example.dddlearning.shop.infrastructure.entity.OrderEntity;
 import org.example.dddlearning.shop.infrastructure.entity.OrderItemEntity;

@@ -1,7 +1,7 @@
 package org.example.dddlearning.shop.domain.service;
 
-import org.example.dddlearning.shop.domain.model.Order;
-import org.example.dddlearning.shop.domain.model.OrderItem;
+import org.example.dddlearning.shop.domain.model.order.Order;
+import org.example.dddlearning.shop.domain.model.order.OrderItem;
 import org.example.dddlearning.shop.domain.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package org.example.dddlearning.shop.domain.model;
+package org.example.dddlearning.shop.domain.model.order;
 
 /**
  * @author: hanchaowei

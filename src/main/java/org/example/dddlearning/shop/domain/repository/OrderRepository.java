@@ -1,6 +1,6 @@
 package org.example.dddlearning.shop.domain.repository;
 
-import org.example.dddlearning.shop.domain.model.Order;
+import org.example.dddlearning.shop.domain.model.order.Order;
 
 import java.util.Optional;
 
